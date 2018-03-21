@@ -15,11 +15,12 @@ return val * 2;
 }
 
 function addText(){
-    document.getElementById("textChange").innerHTML = el;
-    if (el == ""){
-        el.innerText = "rofls"
+    var el = document.getElementById("textChange");
+
+    if (el.innerHTML === "rofl"){
+        el.innerHTML = null ;
     }
-    else{
-        el.innerText = ""
+    else { 
+        el.innerHTML = "rofl"
     }
 }
